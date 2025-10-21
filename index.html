@@ -83,7 +83,8 @@
     
     <div class="e-content article-entry" itemprop="articleBody">
       
-        <p>FutureTask类，它实现了 <code>RunnableFuture</code> 接口，既可以作为 <code>Runnable</code> 被线程执行，又可以作为 <code>Future</code> 获取计算结果</p>
+        <p>title: misc</p>
+<p>FutureTask类，它实现了 <code>RunnableFuture</code> 接口，既可以作为 <code>Runnable</code> 被线程执行，又可以作为 <code>Future</code> 获取计算结果</p>
 <p>map遍历， 可以看成整体。</p>
 <p>如有个名为map的Map对象。</p>
 <p>Set&lt;Map.Entry&lt;String, Integer&gt;&gt; entries &#x3D; map.entrySet();</p>
@@ -95,78 +96,27 @@
 <p>其中存储引擎是基于表而不是库的，存储引擎又被称为表类型。</p>
 <p>mySql5.5版本后默认存储引擎为InnoDB。特点为：支持事务、外键、行级锁。</p>
 <p>InnoDB逻辑存储结构如图</p>
-<p><img src="C:\Users\小牛寻宝\AppData\Roaming\Typora\typora-user-images\image-20251016102544066.png" alt="image-20251016102544066"></p>
+<p><img src="/../img/image-20251016102544066.png" alt="image-20251016102544066"></p>
 <h5 id="索引（Index）"><a href="#索引（Index）" class="headerlink" title="索引（Index）"></a>索引（Index）</h5><p>索引在引擎层实现，是一种有序的数据结构，用以高效获取数据。</p>
 <p>无索引时查询进行的是全表扫描，效率低。</p>
 <h5 id="B树（多路平衡查找树）"><a href="#B树（多路平衡查找树）" class="headerlink" title="B树（多路平衡查找树）"></a>B树（多路平衡查找树）</h5><p>多路指一个节点下可以包含多个子节点</p>
-<h5 id="B-树"><a href="#B-树" class="headerlink" title="B+树"></a>B+树</h5><p><img src="C:\Users\小牛寻宝\AppData\Roaming\Typora\typora-user-images\image-20251016152559890.png" alt="image-20251016152559890"></p>
-<p><img src="C:\Users\小牛寻宝\AppData\Roaming\Typora\typora-user-images\image-20251016164043685.png" alt="image-20251016164043685"></p>
+<h5 id="B-树"><a href="#B-树" class="headerlink" title="B+树"></a>B+树</h5><p><img src="/../img/image-20251016152559890.png" alt="image-20251016152559890"></p>
+<p><img src="/../img/image-20251016164043685.png" alt="image-20251016164043685"></p>
 <h5 id="回表查询"><a href="#回表查询" class="headerlink" title="回表查询"></a>回表查询</h5><p>先根据二级索引拿到主键值，再根据主键值走聚集索引拿到这一行的数据</p>
-<p><img src="C:\Users\小牛寻宝\AppData\Roaming\Typora\typora-user-images\image-20251016165022547.png" alt="image-20251016165022547"></p>
+<p><img src="/../img/image-20251016165022547.png" alt="image-20251016165022547"></p>
 <p>通过 <strong>show</strong> <strong>global</strong> status <strong>like</strong> ‘Com_______’; 可以查看当前数据库增删改查操作次数，如果一个数据库查询占大多数，就要进行sql性能优化</p>
-<p><img src="C:\Users\小牛寻宝\AppData\Roaming\Typora\typora-user-images\image-20251017095527694.png" alt="image-20251017095527694"></p>
+<p><img src="/../img/image-20251017095527694.png" alt="image-20251017095527694"></p>
 <p>通过慢查询日志定位到执行效率低的sql语句</p>
 <p>explain + 查询语句可以查看sql语句的查询计划。其中type字段的值可以看出这条sql的效率高低</p>
 <h5 id="索引使用原则"><a href="#索引使用原则" class="headerlink" title="索引使用原则"></a>索引使用原则</h5><p><img src="C:\Users\小牛寻宝\AppData\Roaming\Typora\typora-user-images\image-20251017151520657.png" alt="image-20251017151520657"></p>
-<p><img src="C:\Users\小牛寻宝\AppData\Roaming\Typora\typora-user-images\image-20251017175037550.png" alt="image-20251017175037550"></p>
-<p><img src="C:\Users\小牛寻宝\AppData\Roaming\Typora\typora-user-images\image-20251017175203904.png" alt="image-20251017175203904"></p>
-<p><img src="C:\Users\小牛寻宝\AppData\Roaming\Typora\typora-user-images\image-20251017175347071.png" alt="image-20251017175347071"></p>
+<p><img src="/../img/image-20251017175037550.png" alt="image-20251017175037550"></p>
+<p><img src="/../img/image-20251017175203904.png" alt="image-20251017175203904"></p>
+<p><img src="/../img/image-20251017175347071.png" alt="image-20251017175347071"></p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2025/10/20/report/" data-id="cmgywbd9h0000jsvgh6n769bm" data-title="" class="article-share-link"><span class="fa fa-share">Share</span></a>
-      
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-hello-world" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2025/10/20/hello-world/" class="article-date">
-  <time class="dt-published" datetime="2025-10-20T07:51:41.894Z" itemprop="datePublished">2025-10-20</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2025/10/20/hello-world/">Hello World</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2025/10/20/hello-world/" data-id="cmgyuep1r00000ovg1vwz1uw0" data-title="Hello World" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      <a data-url="http://example.com/2025/10/20/report/" data-id="cmgzwl8i80000u8vg0hj9exc4" data-title="" class="article-share-link"><span class="fa fa-share">Share</span></a>
       
       
       
@@ -210,10 +160,6 @@
         
           <li>
             <a href="/2025/10/20/report/">(no title)</a>
-          </li>
-        
-          <li>
-            <a href="/2025/10/20/hello-world/">Hello World</a>
           </li>
         
       </ul>
